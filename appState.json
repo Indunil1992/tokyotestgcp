@@ -1,0 +1,99 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "97e3ca17-a15c-4c11-8d18-45c1ee1eda6d": {
+        "id": "97e3ca17-a15c-4c11-8d18-45c1ee1eda6d",
+        "parent": null,
+        "name": "tokyotestgcp",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "3bab489e-add0-4e98-ae6d-0b99231bc2c0"
+        ],
+        "isRemovable": false,
+        "filePath": "tokyotestgcp"
+      },
+      "3bab489e-add0-4e98-ae6d-0b99231bc2c0": {
+        "id": "3bab489e-add0-4e98-ae6d-0b99231bc2c0",
+        "parent": "97e3ca17-a15c-4c11-8d18-45c1ee1eda6d",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "tokyotestgcp/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "8793e5f1-7680-40e5-8ee6-08acff82a43a": {
+        "id": "8793e5f1-7680-40e5-8ee6-08acff82a43a",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.tokyotestgcpfunction = require(\"./tokyotestgcp/function.js\").handler;"
+      },
+      "2c1df015-86b8-4b7d-851a-76d43a2f3ec8": {
+        "id": "2c1df015-86b8-4b7d-851a-76d43a2f3ec8",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "rootNode": "97e3ca17-a15c-4c11-8d18-45c1ee1eda6d",
+    "openFiles": [
+      "3bab489e-add0-4e98-ae6d-0b99231bc2c0"
+    ],
+    "currentFileId": "3bab489e-add0-4e98-ae6d-0b99231bc2c0",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "tokyotestgcp",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "asia-northeast1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1568786254186
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "tokyotestgcp",
+      "url": "https://github.com/Indunil1992/tokyotestgcp"
+    }
+  }
+}
